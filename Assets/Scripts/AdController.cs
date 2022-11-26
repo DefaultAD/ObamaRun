@@ -93,6 +93,7 @@ public class AdController : MonoBehaviour
         _interstitialAd.OnAdClosed += (sender, args) =>
         {
             // _interstitialAd = new InterstitialAd(InterstitialAdUnitId);
+            AudioListener.volume = 1;
             _interstitialAd.LoadAd(new AdRequest.Builder().Build());
         };
         _interstitialAd.OnAdFailedToLoad += (sender, args) =>

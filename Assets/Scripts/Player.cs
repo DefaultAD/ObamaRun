@@ -161,9 +161,10 @@ public class Player : MonoBehaviour
         //     AdController.Singleton.ShowRewardedAd(2.5f);
         //     PlayerPrefs.SetFloat("elapsedTimeAd", 0);
         // }
-        if (PlayerPrefs.GetInt("DeathsAmount") > 1)
+        if (PlayerPrefs.GetInt("DeathsAmount") > 0)
         {
-            AdController.Singleton.ShowInterstitialAd(2.5f);
+            AudioListener.volume = 0;
+            AdController.Singleton.ShowInterstitialAd(0);
             PlayerPrefs.SetInt("DeathsAmount", 0);
         }
     }

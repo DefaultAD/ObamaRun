@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        _rewardedAdToResume = new RewardedAd(AdController.Singleton.InterstitialAdUnitId);
+        _rewardedAdToResume = new RewardedAd(AdController.Singleton.RewardedAdUnitId);
         _rewardedAdToResume.OnAdFailedToLoad +=
             (sender, args) => _rewardedAdToResume.LoadAd(new AdRequest.Builder().Build());
         _rewardedAdToResume.LoadAd(new AdRequest.Builder().Build());
