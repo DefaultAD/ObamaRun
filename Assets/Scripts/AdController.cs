@@ -19,6 +19,7 @@ public class AdController : MonoBehaviour
     #endregion
 
     public GameObject loadingScreen;
+    public GameObject loseButtons;
 
     private RewardedAd _rewardedAd;
     private InterstitialAd _interstitialAd;
@@ -33,14 +34,17 @@ public class AdController : MonoBehaviour
         else
             instance = this;
         DontDestroyOnLoad(gameObject);
-        
+
         //PlayerPrefs.DeleteAll();
     }
-
+    void Update()
+    {
+        loseButtons = GameObject.Find("Canvas/LoseButtons/Buttons");
+    }
     void Start()
     {
- #if UNITY_EDITOR
-         RewardedAdUnitId = "unused";
+#if UNITY_EDITOR
+        RewardedAdUnitId = "unused";
          InterstitialAdUnitId = "unused";
          #elif UNITY_ANDROID
          RewardedAdUnitId = "ca-app-pub-6067100235232087/1938711780";
@@ -94,6 +98,7 @@ public class AdController : MonoBehaviour
         {
             // _interstitialAd = new InterstitialAd(InterstitialAdUnitId);
             AudioListener.volume = 1;
+            loseButtons.SetActive(true);
             _interstitialAd.LoadAd(new AdRequest.Builder().Build());
         };
         _interstitialAd.OnAdFailedToLoad += (sender, args) =>
@@ -122,13 +127,11 @@ public class AdController : MonoBehaviour
 
     public void ShowInterstitialAd(float delay = 0f)
     {
-        loadingScreen.SetActive(true);
         IEnumerator ShowAd()
         {
             yield return new WaitForSeconds(delay);
             if (_interstitialAd.IsLoaded())
             {
-                loadingScreen.SetActive(false);
                 Debug.Log("showing interstitial ad...");
                 _interstitialAd.Show();
             }
