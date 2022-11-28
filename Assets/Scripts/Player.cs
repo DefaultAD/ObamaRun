@@ -1,4 +1,6 @@
 using DG.Tweening;
+using GoogleMobileAds.Api;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -163,10 +165,17 @@ public class Player : MonoBehaviour
         // }
         if (PlayerPrefs.GetInt("DeathsAmount") > 0)
         {
-            AudioListener.volume = 0;
-            AdController.Singleton.ShowInterstitialAd(0);
+            StartCoroutine(ShowAd());
             PlayerPrefs.SetInt("DeathsAmount", 0);
+
         }
+    }
+
+    IEnumerator ShowAd()
+    {
+        yield return new WaitForSeconds(3);
+        AudioListener.volume = 0;
+        AdController.Singleton.ShowInterstitialAd(0);
     }
 
     private void OnHitCoin(Collider coin)

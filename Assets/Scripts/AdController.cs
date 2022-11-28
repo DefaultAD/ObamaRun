@@ -82,11 +82,13 @@ public class AdController : MonoBehaviour
     {
         _rewardedAd.OnAdClosed += (sender, args) =>
         {
+            AudioListener.volume = 0.7f;
             // _rewardedAd = new RewardedAd(RewardedAdUnitId);
             _rewardedAd.LoadAd(new AdRequest.Builder().Build());
         };
         _rewardedAd.OnAdFailedToLoad += (sender, args) =>
         {
+            AudioListener.volume = 0.7f;
             // _rewardedAd = new RewardedAd(RewardedAdUnitId);
             _rewardedAd.LoadAd(new AdRequest.Builder().Build());
         };
@@ -97,12 +99,13 @@ public class AdController : MonoBehaviour
         _interstitialAd.OnAdClosed += (sender, args) =>
         {
             // _interstitialAd = new InterstitialAd(InterstitialAdUnitId);
-            AudioListener.volume = 1;
+            AudioListener.volume = 0.7f;
             loseButtons.SetActive(true);
             _interstitialAd.LoadAd(new AdRequest.Builder().Build());
         };
         _interstitialAd.OnAdFailedToLoad += (sender, args) =>
         {
+            AudioListener.volume = 0.7f;
             // _interstitialAd = new InterstitialAd(InterstitialAdUnitId);
             _interstitialAd.LoadAd(new AdRequest.Builder().Build());
         };
@@ -110,7 +113,6 @@ public class AdController : MonoBehaviour
 
     public void ShowRewardedAd(float delay = 0f)
     {
-        loadingScreen.SetActive(true);
         IEnumerator ShowAd()
         {
             yield return new WaitForSeconds(delay);

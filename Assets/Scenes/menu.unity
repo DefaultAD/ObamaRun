@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30195934, g: 0.65055597, b: 1.1042656, a: 1}
+  m_IndirectSpecularColor: {r: 0.30111578, g: 0.64995533, b: 1.1033106, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7743,6 +7743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 324474336}
+  loseButtons: {fileID: 0}
 --- !u!4 &528834613
 Transform:
   m_ObjectHideFlags: 0
@@ -12044,27 +12045,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 957.193
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1280
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4894117514267772772, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12121,6 +12122,22 @@ PrefabInstance:
     - target: {fileID: 4894117514267772775, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107907657492300024, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f79e83ceaec779e4eb2f7fef6a56de4d, type: 3}
+    - target: {fileID: 5107907658774163266, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f4620560966169a4aa18ea6b65be3e55, type: 3}
+    - target: {fileID: 5107907658774163324, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 516
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107907658774163324, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 193
       objectReference: {fileID: 0}
     - target: {fileID: 5107907658774163325, guid: 668fef3c130a44f48ab763ff54068f76, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14155,7 +14172,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c93f67f1179cfd84bb0d682446735c1e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -26313,6 +26330,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1c356943c3e3d4428b1c2a6de10813ec, type: 3}
+    - target: {fileID: 5555062446528374695, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747983160793796526, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747983160793796526, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747983160793796526, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.011764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747983160793796526, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747983160793796526, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5747983160793796526, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66f6eb621b1664eae9579cd86a4fe45b, type: 3}
 --- !u!4 &7082657147317348178

@@ -2,19 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MuteAudio : MonoBehaviour
+public class StopAudio : MonoBehaviour
 {
-    public GameObject camera;
-
     // Start is called before the first frame update
-    void Start()
+    public void Mute()
     {
-        camera.GetComponent<AudioListener>().enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        AudioListener.volume = 0f;
     }
 }

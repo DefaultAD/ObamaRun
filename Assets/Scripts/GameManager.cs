@@ -47,13 +47,17 @@ public class GameManager : MonoBehaviour
     public void ResumeWithAd()
     {
         _rewardedAdToResume.OnUserEarnedReward += (sender, reward) => ResumeGame();
-            
+
         if (_rewardedAdToResume.IsLoaded())
+        {
+            AudioListener.volume = 0f;
             _rewardedAdToResume.Show();
+        }
     }
 
     private void ResumeGame()
     {
+        AudioListener.volume = 0.7f;
         Debug.Log("resuming game...");
         PlayerPrefs.SetInt("IsResume", 1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
