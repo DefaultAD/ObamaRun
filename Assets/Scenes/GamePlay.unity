@@ -5417,6 +5417,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1747880296}
     - target: {fileID: 1785235054914014097, guid: 906c825465139444eb65b6355b08c260, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1785235054914014097, guid: 906c825465139444eb65b6355b08c260, type: 3}
       propertyPath: moveVelocity
       value: 35
       objectReference: {fileID: 0}
@@ -6277,6 +6281,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1747880296}
     - target: {fileID: 2343342998191624229, guid: 77cd31ef802d9074e8ac0f3f3f23777d, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343342998191624229, guid: 77cd31ef802d9074e8ac0f3f3f23777d, type: 3}
       propertyPath: moveVelocity
       value: 35
       objectReference: {fileID: 0}
@@ -6598,6 +6606,10 @@ PrefabInstance:
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1747880296}
+    - target: {fileID: 5354752224765355107, guid: 12e36a3c3d0171142b1a46131235cc98, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5354752224765355107, guid: 12e36a3c3d0171142b1a46131235cc98, type: 3}
       propertyPath: moveVelocity
       value: 35
@@ -7294,6 +7306,10 @@ PrefabInstance:
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1747880296}
+    - target: {fileID: 6362231566453645877, guid: ebfc72935667cf04b88dcf4de25c3d47, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6362231566453645877, guid: ebfc72935667cf04b88dcf4de25c3d47, type: 3}
       propertyPath: moveVelocity
       value: 35
@@ -8528,6 +8544,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1747880296}
     - target: {fileID: 5354752224765355107, guid: 12e36a3c3d0171142b1a46131235cc98, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354752224765355107, guid: 12e36a3c3d0171142b1a46131235cc98, type: 3}
       propertyPath: moveVelocity
       value: 35
       objectReference: {fileID: 0}
@@ -9264,6 +9284,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1747880296}
     - target: {fileID: 3300172074195805790, guid: 44cd84734413abb4aa8590c3f28d8ed3, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300172074195805790, guid: 44cd84734413abb4aa8590c3f28d8ed3, type: 3}
       propertyPath: moveVelocity
       value: 35
       objectReference: {fileID: 0}
@@ -9528,6 +9552,10 @@ PrefabInstance:
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1747880296}
+    - target: {fileID: 5354752224765355107, guid: 12e36a3c3d0171142b1a46131235cc98, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5354752224765355107, guid: 12e36a3c3d0171142b1a46131235cc98, type: 3}
       propertyPath: moveVelocity
       value: 35
@@ -9962,7 +9990,7 @@ MonoBehaviour:
   - 111
   - 90.5
   birdParticle: {fileID: 50379841}
-  speed: 3.05
+  speed: 3.15
   ui: {fileID: 164617064}
 --- !u!65 &1764573310
 BoxCollider:
@@ -11862,6 +11890,10 @@ PrefabInstance:
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1747880296}
+    - target: {fileID: 6666908041661764865, guid: 07f711d5320b6e6449ea277d7a0f8b72, type: 3}
+      propertyPath: controlSens
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6666908041661764865, guid: 07f711d5320b6e6449ea277d7a0f8b72, type: 3}
       propertyPath: moveVelocity
       value: 35
